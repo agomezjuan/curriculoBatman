@@ -1,0 +1,29 @@
+body, header, h1, h2  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #E5E5E5;
+}
+.logo {
+    width: 100px;
+    height: 147px;
+    display: block;
+    margin: 0 auto;
+    padding: 21px 0 21px 0;
+}
+.titulo-principal {
+    background-color: #C4C4C4;
+}
+.titulo-principal h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    line-height: 84.69%;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #005677;
+    padding: 14px 0;
+}
