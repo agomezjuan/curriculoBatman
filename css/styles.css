@@ -2,6 +2,7 @@ body, header, h1, h2  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 header {
     background-color: #E5E5E5;
@@ -17,7 +18,7 @@ header {
     background-color: #C4C4C4;
 }
 .titulo-principal h1 {
-    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
     font-style: bold;
     line-height: 84.69%;
     font-weight: 700;
@@ -27,3 +28,37 @@ header {
     color: #005677;
     padding: 14px 0;
 }
+section {
+    width: 100%;
+    max-width: 1041px;
+    display: block;
+    margin: 30px auto;
+}
+section:first-of-type {
+    margin-top: 104px;
+}
+section > h2 {
+    font-feature-settings: "smcp" on;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 84.69%;
+    color: #005677;
+    background-color: #C4C4C4;
+    padding: 6px 0 7px 9px;
+}
+ul > li {
+    margin: 10px;
+}
+.datos > ul > li strong {
+    font-style: italic;
+} 
+.formacion > ul > li {
+    list-style-type: none;
+} 
+.detalle {
+    display: block;
+    padding-left: 78px;
+} 
