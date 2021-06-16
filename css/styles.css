@@ -58,7 +58,23 @@ ul > li {
 .formacion > ul > li {
     list-style-type: none;
 } 
+.experiencia > ul > li {
+    list-style-type: none;
+} 
 .detalle {
     display: block;
     padding-left: 78px;
 } 
+footer {
+    margin-top: 150px;
+    text-align: center;
+    background-color: #005677;
+    padding: 10px 0;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+footer i {
+    margin-left: 20px;
+    font-size: 20px;
+}
