@@ -1,11 +1,46 @@
-body, header, h1, h2  {
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body, header, h1, h2, span, a  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Gudea, sans-serif;
 }
-header {
+body {
+    height: 100vh;
+}
+img {
+    width: 100%;
+}
+.header {
     background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.header-img {
+    width: 80%;
+    max-width: 400px;
+}
+.top {
+    /* background-color: #000000; */
+    font-family: Chiller;
+    font-weight: 800;
+    color: #740f18;
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+nav a i {
+    padding: 0 10px 0 0;
 }
 .logo {
     width: 100px;
@@ -15,49 +50,177 @@ header {
     padding: 21px 0 21px 0;
 }
 .titulo-principal {
-    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
 }
 .titulo-principal h1 {
     letter-spacing: 10px;
     font-style: bold;
-    line-height: 84.69%;
-    font-weight: 700;
-    font-size: 35px;
-    text-transform: uppercase;
     text-align: center;
-    color: #005677;
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #000;
     padding: 14px 0;
+}
+.boton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #d0451b 5%, #740f18 100%);
+	background-color:#740f18;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.boton:hover {
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	background-color:#bc3315;
+}
+.boton:active {
+	position:relative;
+	top:1px;
+}
+.main-quote {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 30px 20px;
+}
+.main-quote h2 {
+    color: #bc3315;
+    font-size: 55px;
 }
 section {
     width: 100%;
     max-width: 1041px;
     display: block;
-    margin: 30px auto;
+    margin: 80px auto;
 }
 section:first-of-type {
-    margin-top: 104px;
+    margin-top: 50px;
 }
-section > h2 {
+section h2 {
     font-feature-settings: "smcp" on;
+    text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 35px;
     line-height: 84.69%;
-    color: #005677;
-    background-color: #C4C4C4;
-    padding: 6px 0 7px 9px;
+    color: #740f18;
+    margin: 60px 15px 40px 15px;
 }
 ul > li {
     margin: 10px;
 }
+h2 span {
+    color: #000000;
+    font-size: 12px;
+}
+.green-bg {
+    background-color: rgba(11, 88, 15, 0.5);
+}
+.characters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.characters > div {
+    display: flex;
+    justify-content: space-around;
+}
+.character {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+.character img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #740f18;
+}
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .datos > ul > li strong {
     font-style: italic;
 } 
+.born-joker, .raising-joker, .evil-joker {
+    display: flex;
+    justify-content: center;
+}
+.born-joker img, .evil-joker img {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+.raising-joker img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+blockquote
+{
+  font-style:italic;
+  margin-left:32px;
+  font-family:Gudea, Verdana;
+  line-height: 180%;
+  padding-left: 48px;
+  background:url('/img/blockquote.png');
+  background-repeat:no-repeat;
+  min-height: 30px;  
+}
 .formacion > ul > li {
     list-style-type: none;
 } 
+.parallax {
+    background-image: url('../img/joker-film-2019.jpg');
+    background-color: rgb(0,0,0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 400px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 160px 0;
+}
+.oppacity {
+    background-color: rgba(0,0,0,0.5);    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.parallax h3 {
+    color: #FFFFFF;
+    font-size: 45px;
+    position: absolute;
+    z-index: 1;
+}
 .experiencia > ul > li {
     list-style-type: none;
 } 
@@ -66,15 +229,20 @@ ul > li {
     padding-left: 78px;
 } 
 footer {
-    margin-top: 150px;
+    margin-top: 60px;
     text-align: center;
-    background-color: #005677;
+    background-color: #000000;
     padding: 10px 0;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 20px;
+    padding: 40px;
+}
+footer span {
+    font-family: Chiller, sans-serif;
+    padding-top: 30px;
+    display: block;
 }
 footer i {
-    margin-left: 20px;
-    font-size: 20px;
+    margin: 0 20px;
 }

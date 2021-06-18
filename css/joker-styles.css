@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Chiller;
+    src: url(/fonts/CHILLER.TTF);
+}
+h1, h2, h3 {
+    font-family: Chiller;
+    margin: 3px 20px;
+    color: black;
+}
+.header {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: contain;
+    padding: 20px;
+    min-height: 400px;
+}
