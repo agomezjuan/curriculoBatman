@@ -186,7 +186,7 @@ blockquote
   font-family:Gudea, Verdana;
   line-height: 180%;
   padding-left: 48px;
-  background:url('/img/blockquote.png');
+  background:url('../img/blockquote.png');
   background-repeat:no-repeat;
   min-height: 30px;  
 }
@@ -252,5 +252,8 @@ footer i {
 @media screen and (max-width: 480px)  {
     .titulo-principal h1 {
         font-size: 48px;
+    }
+    .boton {
+        margin: 20px 0;
     }
 }
