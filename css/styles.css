@@ -97,7 +97,6 @@ nav a i {
     align-items: center;
     width: 100%;
     color: #FFFFFF;
-    padding: 30px 20px;
 }
 .main-quote h2 {
     color: #bc3315;
@@ -168,6 +167,7 @@ h2 span {
 .born-joker, .raising-joker, .evil-joker {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .born-joker img, .evil-joker img {
     width: 80%;
@@ -210,6 +210,7 @@ blockquote
 .oppacity {
     background-color: rgba(0,0,0,0.5);    
     position: absolute;
+    text-align: center;
     top: 0;
     left: 0;
     width: 100%;
