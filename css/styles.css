@@ -247,3 +247,10 @@ footer span {
 footer i {
     margin: 0 20px;
 }
+
+/* Media Query */
+@media screen and (max-width: 480px)  {
+    .titulo-principal h1 {
+        font-size: 48px;
+    }
+}
